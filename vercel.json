@@ -1,5 +1,18 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/index03.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "inprintwetrust.vercel.app"
+        }
+      ],
+      "destination": "https://inprintwetrust.store/:1",
+      "permanent": true
+    }
   ]
 }
