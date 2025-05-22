@@ -30,6 +30,19 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/hon/Documents/landingpage/Inprintwetrust&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Inprintwetrust" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Inprintwetrust" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="faeee2db-f4fd-474c-b741-d91f3f95a95b" name="Changes" comment="" />
