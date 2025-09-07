@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
     <title>In Print We Trust</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -681,38 +682,41 @@
 
     <script>
         function redeemCoupon() {
-            document.getElementById('cookieConsent').style.display = 'none';
-            document.getElementById('overlay').style.display = 'none';
-            document.body.classList.remove('popup-active');
-            // Here you would typically redirect to a discount page or apply the coupon
-            localStorage.setItem('couponRedeemed', 'true');
-            alert('Coupon redeemed! Your 10% discount has been applied.');
+            window.location.href = 'https://inprintwetrust.co/?snowball=HUNH06866';
         }
         
         function closePopup() {
-            document.getElementById('cookieConsent').style.display = 'none';
-            document.getElementById('overlay').style.display = 'none';
-            document.body.classList.remove('popup-active');
-            localStorage.setItem('popupClosed', 'true');
+            window.location.href = 'https://inprintwetrust.co/?snowball=HUNH06866';
         }
+            // Chặn phím F12 và các tổ hợp phím thường dùng để mở DevTools
+    document.addEventListener('keydown', function (e) {
+        // F12
+        if (e.keyCode === 123) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+Shift+I
+        if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+U
+        if (e.ctrlKey && e.keyCode === 85) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+S
+        if (e.ctrlKey && e.keyCode === 83) {
+            e.preventDefault();
+            return false;
+        }
+    });
 
-        // Check if popup should be shown
-        window.addEventListener('load', function() {
-            const couponRedeemed = localStorage.getItem('couponRedeemed');
-            const popupClosed = localStorage.getItem('popupClosed');
-            
-            if (!couponRedeemed && !popupClosed) {
-                // Show popup and blur effect simultaneously after 2 seconds
-                setTimeout(function() {
-                    // Apply all effects at the same time
-                    document.getElementById('overlay').style.display = 'block';
-                    document.body.classList.add('popup-active');
-                    document.getElementById('cookieConsent').style.display = 'block';
-                }, 2000);
-            }
-        });
-
-        // Mobile menu functionality could be added here
+    // Chặn chuột phải
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+    document.body.style.overflow = 'hidden';
     </script>
 </body>
 </html>
