@@ -293,11 +293,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
+            background-color: rgba(55, 78, 103, 0.7);
             z-index: 999;
-            display: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         /* Added blur effect to body when popup is active */
@@ -505,7 +505,7 @@
         <button class="close-btn" onclick="closePopup()">&times;</button>
         
         <!-- Updated content to match discount popup design -->
-        <h3>HUỲNH NGỌC sent you 10% off!</h3>
+        <h3>PETER CHEEK sent you 10% off!</h3>
         <p>Click below to redeem your discount code</p>
         <div class="cookie-buttons">
             <button class="accept-btn" onclick="redeemCoupon()">Redeem Coupon</button>
