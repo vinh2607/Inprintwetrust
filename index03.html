@@ -498,20 +498,19 @@
 </head>
 <body>
     <!-- Overlay for cookie consent -->
-<!--     <div class="overlay" id="overlay"></div> -->
+    <div class="overlay" id="overlay"></div> 
 
     <!-- Cookie consent popup -->
-<!--     <div class="cookie-consent" id="cookieConsent">
-        <!-- Added close button -->
-<!--         <button class="close-btn" onclick="closePopup()">&times;</button> -->
+    <div class="cookie-consent" id="cookieConsent">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
         
-        <!-- Updated content to match discount popup design -->
-<!--         <h3>PETER CHEEK sent you 10% off!</h3>
+        <!-- Updated content to match discount popup design-->
+        <h3>PETER CHEEK sent you 10% off!</h3>
         <p>Click below to redeem your discount code</p>
         <div class="cookie-buttons">
             <button class="accept-btn" onclick="redeemCoupon()">Redeem Coupon</button>
         </div>
-    </div> --> -->
+    </div>
 
     <!-- Header -->
     <header>
@@ -682,42 +681,42 @@
     </footer>
 
     <script>
-    //     function redeemCoupon() {
-    //         window.location.href = 'https://inprintwetrust.co/?snowball=HUNH06866';
-    //     }
+        function redeemCoupon() {
+            window.location.href = 'https://inprintwetrust.co/?snowball=HUNH06866';
+        }
         
-    //     function closePopup() {
-    //         window.location.href = 'https://inprintwetrust.co/?snowball=HUNH06866';
-    //     }
-    //         // Chặn phím F12 và các tổ hợp phím thường dùng để mở DevTools
-    // document.addEventListener('keydown', function (e) {
-    //     // F12
-    //     if (e.keyCode === 123) {
-    //         e.preventDefault();
-    //         return false;
-    //     }
-    //     // Ctrl+Shift+I
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
-    //         e.preventDefault();
-    //         return false;
-    //     }
-    //     // Ctrl+U
-    //     if (e.ctrlKey && e.keyCode === 85) {
-    //         e.preventDefault();
-    //         return false;
-    //     }
-    //     // Ctrl+S
-    //     if (e.ctrlKey && e.keyCode === 83) {
-    //         e.preventDefault();
-    //         return false;
-    //     }
-    // });
+        function closePopup() {
+            window.location.href = 'https://inprintwetrust.co/?snowball=HUNH06866';
+        }
+            // Chặn phím F12 và các tổ hợp phím thường dùng để mở DevTools
+    document.addEventListener('keydown', function (e) {
+        // F12
+        if (e.keyCode === 123) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+Shift+I
+        if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+U
+        if (e.ctrlKey && e.keyCode === 85) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+S
+        if (e.ctrlKey && e.keyCode === 83) {
+            e.preventDefault();
+            return false;
+        }
+    });
 
-    // // Chặn chuột phải
-    // document.addEventListener('contextmenu', function (e) {
-    //     e.preventDefault();
-    // });
-    // document.body.style.overflow = 'hidden';
+    // Chặn chuột phải
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+    document.body.style.overflow = 'hidden';
     </script>
 </body>
 </html>
